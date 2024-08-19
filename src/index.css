@@ -37,6 +37,7 @@ button {
 
 .delete-button {
     padding: 10px 18px;
+    margin-left: 5px;
     border: 2px solid;
     outline: none;
     background-color: hsl(0, 100%, 50%);
@@ -66,22 +67,73 @@ button {
     cursor: not-allowed;
 }
 
-input {
+input.add-task {
     font-size: 1.6rem;
     padding: 10px;
     border: 3px solid rgb(0, 191, 255);
     border-radius: 5px;
     margin-right: 5px;
     transition-duration: 300ms;
+    width: 40%;
 }
 
-input:hover {
+input.add-task:hover {
     background-color: rgb(216, 216, 216);
 }
 
-input:focus {
+input.add-task:focus {
     background-color: white;
     outline: none;
+}
+
+input.edit-task {
+    font-size: 1.3rem;
+    padding: 5px;
+    border: 2px solid rgb(0, 191, 255);
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 100%;
+}
+
+input.edit-task:focus {
+    outline: none;
+}
+
+.edit-button {
+    padding: 10px 18px;
+    border: 2px solid white;
+    outline: none;
+    background-color: hsl(58, 95%, 51%);
+    color: black;
+}
+
+.edit-button:hover {
+    background-color: hsl(58, 95%, 41%);
+}
+
+.save-button {
+    padding: 10px 14px;
+    border: none;
+    outline: none;
+    background-color: hsl(120, 90%, 50%);
+    color: white;
+    margin: 2px 5px 2px 5px;
+}
+
+.save-button:hover {
+    background-color: hsl(120, 90%, 40%);
+}
+
+.cancel-button {
+    padding: 10px 14px;
+    border: none;
+    outline: none;
+    background-color: hsl(0, 100%, 50%);
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: hsl(0, 100%, 40%);
 }
 
 ol {
@@ -119,6 +171,5 @@ span {
     flex: 1;
     padding: 5px;
     font-weight: normal;
-    text-align: left;   
+    text-align: left;
 }
-
